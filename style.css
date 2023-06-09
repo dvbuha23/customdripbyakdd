@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: darkgray;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+} 
+.navbar h1{
+    color: white;
+    
+}
+.navbar h1 span{
+    color: chartreuse;
+    border: 5px;
+    cursor: pointer;
+    
+}
+.navbar h1 span:hover{
+    transition: ease-in 1s;
+    color:rgb(255, 255, 255);
+    background-color: black;
+    text-shadow: 4px 0px 5px rgb(0, 38, 255);
+
+}
+.navbar .navtitle{
+    color: chartreuse;
+} 
+.navbar ul{
+    display: flex;
+}
+.navbar ul li{
+    list-style: none;
+    margin:  20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li a:hover{
+    font-size: 1.1rem;
+    color: chartreuse;
+    cursor: pointer;
+}
+.navbar .btn{
+    position: relative;
+    font-size: 1rem;
+    padding: 10px 10px;
+    border: 2px solid hwb(103 29% 15% / 0.938);
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 8px;
+    color: white;
+    background-color: chartreuse;
+}
+.navbar .btn:hover{
+    background-color: hwb(0 9% 91% / 0.938);
+    font-size: 0.9rem;
+}
+.intro {
+    
+    text-align: center;
+}
+.intro .container{
+    font-size: 2.2rem;
+    background: url(IntroBG.jpg);
+    /* margin: 0px; */
+    /* border-image: stretch; */
+    width: 100%;
+    padding: 170px 0px;
+    color: rgb(0, 0, 0);
+    font-family: fangsong;
+    text-shadow: 4px 0px 5px chartreuse;
+    backface-visibility: hidden;
+
+}
+.intro .container h1{
+    backface-visibility: hidden;
+}
+
+.neon{
+    color: rgb(0, 0, 0);
+    border: 5px;
+    text-shadow: 4px 0px 5px chartreuse;
+    cursor: pointer;
+}
+.neon:hover{
+    transition: ease-in 1s;
+    color:rgb(255, 255, 255);
+    background-color: black;
+    text-shadow: 4px 0px 5px rgb(0, 38, 255);
+
+}
+.intro .btn{
+    position: relative;
+    font-size: 1rem;
+    padding:  4px 10px;
+    border: 2px solid hwb(103 29% 15% / 0.938);
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    background-color: chartreuse;
+}
+.intro .btn:hover{
+    background-color: hwb(0 9% 91% / 0.938);
+    font-size: 0.9rem;
+}
+.collection{
+    padding: 105px 15px;
+    display: flex;
+    background-color: chartreuse;
+}
+.collection .left{
+    margin: 30px;
+    text-align: justify;
+    /* justify-content: flex-end; */
+    width: 50%;
+    padding-top: 45px;
+    
+
+}
+.collection .left .char{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+   
+}
+.collection .left h1{
+    font-size: 1.8rem;
+    padding-bottom: 15px;
+
+}
+.collection .left p{
+    font-size: 1.2rem;
+    margin: 5px;
+    padding-bottom: 10px;
+}
+.collection .left .btn{
+    position: relative;
+    font-size: 1rem;
+    padding: 8px 10px;
+    /* border: 2px solid rgb(0, 0, 0); */
+    border-radius: 15px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+
+}
+.left .btn:hover{
+    background-color: hwb(0 9% 91% / 0.938);
+    font-size: 0.9rem;
+}
+.collection .box-container{
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 45px;
+    padding-left: 50px;
+    margin: -12px;
+    
+}
+.collection .box-container .box{
+    overflow: hidden;
+}
+.collection .box-container .box img{
+    height: 20rem;
+    width: 80%;
+    object-fit: contain;
+}
+.services{
+    background-color: black;
+    padding-top: 80px;
+}
+.services h1{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+.services .box-container{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 25px;
+
+}
+.services .box-container .box{
+    flex: 0 1 16rem;
+    border-radius: 13rem;
+    padding: 5rem;
+    text-align: center;
+}
+.services .box-container .box img{
+    height: 20rem;
+    width:100%;
+    object-fit: contain;
+}
+.services .box-container h3{
+    color: white;
+}
+.services .box-container p{
+    color: white;
+}
+.gallery{
+    padding: 80px 20px;
+    background-color: chartreuse;
+}
+.gallery .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    
+}
+.gallery h1{
+    font-size: 2rem;
+    text-align: center;
+}
+.gallery .box-container .box{
+    flex: 1 1 18rem;
+    border-radius: 5px;
+    padding: 3rem;
+    
+}
+.gallery .box-container .box img{
+    height: 25rem;
+    width: 105%;
+    object-fit: fill;
+    border-radius: 8rem;
+}
+.gallery .box-container .box img:hover{
+    width: 100%;
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+.contact{
+    background-color: white;
+    padding: 120px;
+}
+.contact h1{
+    font-size: 2rem;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+
+.contact .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+
+}
+.contact .box-container .image{
+    flex: 1 1 30rem;
+}
+.contact .box-container .image img{
+    width: 100%;
+}
+.contact .box-container form{
+    flex: 1 1 30rem;
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0,.2);
+    border-radius: .5rem;
+}
+.contact .box-container form .inputBox{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.contact .box-container form .inputBox input,  .contact .box-container form .textarea{
+    width: 45%;
+    margin: 1rem ;
+    padding: 1rem;
+    font-size: 0.7rem;
+    color: #333;
+    background: #f7f7f7;
+    text-transform: none;
+}
+.contact .box-container form textarea{
+    height: 15rem;
+    margin: 1rem 1px;
+    padding: 1rem;
+    font-size: 0.7rem;
+    color: #333;
+    background: #f7f7f7;
+    resize: none;
+    width: 94%;
+}
+.contact .box-container form .btn{
+    position: relative;
+    font-size: 1rem;
+    padding:  4px 10px;
+    border: 2px solid hwb(103 29% 15% / 0.938);
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    background-color: chartreuse;
+}
+.contact .box-container form .btn:hover{
+    background-color: hwb(0 9% 91% / 0.938);
+    font-size: 0.9rem;
+}
+footer{
+    background: #333;
+}
+footer .box-container{
+    display: flex;
+    /* gap: 1rem; */
+    flex-wrap: nowrap;
+    align-items: baseline;
+}
+footer .box-container .box{
+    padding: 3rem 15px;
+    flex: 1 0 20rem;
+    text-align: -webkit-center;
+}
+
+footer .box-container .box p{
+    color: chartreuse;
+    font-size: 1rem;
+    padding: 2px 2px;
+}
+footer .box-container .box a{
+    justify-content: center;
+    padding: 2px;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+footer .box-container .box a:hover{
+    color: chartreuse;
+    font-size: 0.9rem;
+}
+footer .box-container .box h3{
+    font-size: 1.5rem;
+    padding: 2rem 0;
+    color: #f7f7f7;
+    text-align: center;
+}
+footer h3{
+    font-size: 1.5rem;
+    padding: 2rem 0;
+    color: #f7f7f7;
+    text-align: center;
+}
+footer h3 span{
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    border: 5px;
+    text-shadow: 4px 0px 5px chartreuse;
+}
+footer h3 span:hover{
+    transition: ease-in 1s;
+    color:rgb(255, 255, 255);
+    background-color: black;
+    text-shadow: 4px 0px 5px rgb(0, 38, 255);
+}
